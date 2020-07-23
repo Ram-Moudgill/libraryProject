@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Library Management</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary text-light">
+        <a class="navbar-brand text-light" href="#">Library Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input  id="search" class="form-control mr-sm-2" type="search" id="searchTxt" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+      <div id="message">
+        
+      </div>
+
+      <div class="container my-4">
+        <form id="bookDetailForm">
+            <div class="form-group row">
+                <label for="BookId" class="col-sm-2 col-form-label">Book ID</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="BookId">
+                </div>
+              </div>
+            <div class="form-group row">
+              <label for="BookName"  class="col-sm-2 col-form-label">Book name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="BookName">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="author" class="col-sm-2 col-form-label">Author</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="author">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="Programming" value="Programming" checked>
+                    <label class="form-check-label" for="gridRadios2">
+                      Programming
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="Literature" value="Literature" >
+                    <label class="form-check-label" for="gridRadios1">
+                      Literature
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="Stories" value="Stories"
+                    <label class="form-check-label" for="gridRadios3">
+                      Stories
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Add book</button>
+              </div>
+            </div>
+          </form>
+          <table class="table my-4">
+            <thead>
+              <tr>
+                <tr>
+                    <th scope="col">Book ID</th>
+                    <th scope="col">Book name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">type</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+          </table>
+      </div>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
